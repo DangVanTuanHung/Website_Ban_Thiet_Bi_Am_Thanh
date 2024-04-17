@@ -1,0 +1,173 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: dimgray;
+    padding:20px 0 ;
+}
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+header .container .header_content{
+    display: flex;
+    align-items: center;
+}
+header .container .header_content .logo_header{
+    flex-basis: 10%;
+}
+header .container .header_content .menu{
+    flex-basis: 80%;
+}
+header .container .header_content .menu nav .nav_link li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+header .container .header_content .menu nav .nav_link li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 420px;
+    font-size: 20px;
+}
+header .container .header_content .menu nav .nav_link li a:hover{
+    color: red;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: dimgray;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 150px; /* Đảm bảo rộng đủ để hiển thị menu dọc */
+}
+
+.nav_link li:hover .submenu {
+    display: block;
+}
+
+.submenu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.submenu ul li {
+    padding: 10px;
+}
+
+.submenu ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block; /* Hiển thị các mục con dọc xuống */
+}
+
+.submenu ul li a:hover {
+    background-color: dimgray;
+    color: red;
+}
+
+header .container .header_content .giohang_header{
+    flex-basis: 10%;
+}
+
+
+.search_form {
+    margin-top: 10px; /* Khoảng cách giữa menu và form tìm kiếm */
+}
+
+.search_form .input-group {
+    width: 300px; /* Độ rộng của ô tìm kiếm */
+}
+
+.search_form .form-control {
+    border-top-right-radius: 0; /* Để form không tròn góc phải */
+    border-bottom-right-radius: 0;
+}
+
+.search_form .btn {
+    border-top-left-radius: 0; /* Để nút không tròn góc trái */
+    border-bottom-left-radius: 0;
+}
+
+
+/* Thêm mã CSS cho trang chi tiết sản phẩm */
+.body_product {
+    padding: 50px 0;
+}
+
+.body_product .container {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.body_product .title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.body_product .card {
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.body_product .card-body {
+    padding: 30px;
+}
+
+.body_product .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.body_product .card-text {
+    color: #666;
+    line-height: 1.6;
+}
+
+.body_product .discount {
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+.body_product span {
+    color: red;
+}
+
+.body_product .button {
+    margin-top: 30px;
+}
+
+.body_product .btn-primary {
+    background-color: red;
+    border-color: red;
+}
+
+.body_product .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.body_product .img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: rgb(211, 211, 211);
+}
+
+footer .container .row a{
+    font-size: 20px;
+    text-align: left;
+}

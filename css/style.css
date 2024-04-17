@@ -1,0 +1,194 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: dimgray;
+    padding:20px 0 ;
+}
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+header .container .header_content{
+    display: flex;
+    align-items: center;
+}
+header .container .header_content .logo_header{
+    flex-basis: 10%;
+}
+header .container .header_content .menu{
+    flex-basis: 80%;
+}
+header .container .header_content .menu nav .nav_link li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 10px;
+}
+header .container .header_content .menu nav .nav_link li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 420px;
+    font-size: 20px;
+}
+header .container .header_content .menu nav .nav_link li a:hover{
+    color: red;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: dimgray;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 150px; /* Đảm bảo rộng đủ để hiển thị menu dọc */
+}
+
+.nav_link li:hover .submenu {
+    display: block;
+}
+
+.submenu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.submenu ul li {
+    padding: 10px;
+}
+
+.submenu ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block; /* Hiển thị các mục con dọc xuống */
+}
+
+.submenu ul li a:hover {
+    background-color: dimgray;
+    color: red;
+}
+
+header .container .header_content .giohang_header{
+    flex-basis: 10%;
+}
+
+
+.search_form {
+    margin-top: 10px; /* Khoảng cách giữa menu và form tìm kiếm */
+}
+
+.search_form .input-group {
+    width: 300px; /* Độ rộng của ô tìm kiếm */
+}
+
+.search_form .form-control {
+    border-top-right-radius: 0; /* Để form không tròn góc phải */
+    border-bottom-right-radius: 0;
+}
+
+.search_form .btn {
+    border-top-left-radius: 0; /* Để nút không tròn góc trái */
+    border-bottom-left-radius: 0;
+}
+
+
+.roll_body .container .container_roll{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 30px 0;
+}
+
+
+
+
+.body_product{
+    padding: 30px 0;
+}
+
+.body_product .container{
+    background-color: #756ae5;
+    margin-bottom: 50px;
+
+}
+
+.body_product .container .title{
+    width: 100%;
+    text-align: center;
+    background: #d3e373;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+.body_product .container .title h3{
+    text-transform: uppercase;
+    font-weight:600;
+    letter-spacing: 1px;
+}
+
+.body_product .container .row{
+    margin-bottom: 50px;
+}
+
+.body_product .container .buttoncuoi {
+    text-align: center;
+}
+
+.body_product .container .buttoncuoi a{
+    margin-bottom: 10px;
+    background-color:yellow;
+    color: black;
+
+}
+
+/* Đặt màu và font-weight cho các phần tử span trong .card-body */
+.body_product.discount .card-body span {
+    color: #FF0040;
+    font-weight: 600;
+}
+.body_product.discount .card-body .button a:hover{
+    background-color: brown;
+    color: chartreuse;
+
+}
+
+/* Đặt font-weight cho phần tử <s> trong .card-body */
+.body_product.discount .card-body span s {
+    font-weight: 300;
+}
+
+/* Tùy chỉnh phần hiển thị discount */
+.body_product.discount .card-body .discount {
+    width: 50px;
+    height: 50px;
+    background: #FF0040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px #FF0040;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -10px; /* Điều chỉnh margin-top để dịch chuyển nút discount lên trên một chút */
+}
+
+/* Tùy chỉnh khoảng cách giữa các card */
+.body_product.discount .card {
+    margin-bottom: 20px; /* Thêm margin-bottom cho card */
+}
+footer {
+    background-color: rgb(211, 211, 211);
+}
+
+footer .container .row a{
+    font-size: 20px;
+    text-align: left;
+}
+
+
+
+
